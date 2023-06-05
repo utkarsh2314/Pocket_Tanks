@@ -32,7 +32,7 @@ Once the Pocket Tanks is installed and running on your device, you can:
 
 
 ## Contributing
-We welcome contributions to the AR Encyclopedia project. If you'd like to contribute, please follow these guidelines:
+We welcome contributions to the Pocket Tanks project. If you'd like to contribute, please follow these guidelines:
 
 Fork the repository and create your branch.
 Make your changes or additions.
