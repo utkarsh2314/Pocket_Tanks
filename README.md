@@ -17,12 +17,19 @@ To run the Pocket Tanks, follow these steps:
 Once the Pocket Tanks is installed and running on your device, you can:
 
 1.Tank Movement: Implement tank movement mechanics, including rotation, forward and backward movement, and physics-based interactions.
+
 2.Weapon Systems: Implement different types of weapons, aiming mechanics, firing mechanisms, and ammunition management.
+
 3.Terrain Generation: Develop a terrain generation system with procedural generation or predefined level designs.
+
 4.Multiplayer Functionality: Implement multiplayer functionality using Unity's networking capabilities or third-party frameworks.
+
 5.Gameplay Mechanics: Implement game rules, scoring system, collision detection, health management, and power-up mechanics.
+
 6.User Interface: Design and implement intuitive and visually appealing user interfaces for menus, in-game HUD, and game over screen.
+
 7.Audio and Visual Effects: Add appropriate visual effects for weapon impacts, explosions, particle effects, and sound effects. 
+
 
 ## Contributing
 We welcome contributions to the AR Encyclopedia project. If you'd like to contribute, please follow these guidelines:
