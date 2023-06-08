@@ -16,6 +16,9 @@ public class playeraim1 : MonoBehaviour
     public SpriteRenderer AimSprite;
     public TMP_Text powerLbl;
     public TMP_Text AngleLbl;
+
+    public shoot1 shootscript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,7 @@ public class playeraim1 : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-
+            shootscript.FireProjectile(curPower);
         }
     }
 
@@ -42,7 +45,7 @@ public class playeraim1 : MonoBehaviour
         mousePos.z=0;
 
         Vector3 dir = mousePos -transform.position;
-        float angle = Mathf.Atan2(dir.y,dir.x)*Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(dir.y ,dir.x)*Mathf.Rad2Deg;
 
         UpdateAngle((int)angle);
     }
