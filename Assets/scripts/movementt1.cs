@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class movementt1 : MonoBehaviour
 {
+    public playeraim1 script;
     private float horizontal;
     private float speed = 4f;
     private bool isFacingRight= false;
 
-    [SerializeField] private Rigidbody2D rb;
-    
+    [SerializeField] private Rigidbody2D rb1;
+    [SerializeField] private Rigidbody2D rb2;
     // Start is called before the first frame update
     
 
@@ -21,7 +22,13 @@ public class movementt1 : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity= new Vector2(horizontal*speed , rb.velocity.y);
+        
+        if(script.turn1){
+            rb1.velocity= new Vector2(horizontal*speed , rb1.velocity.y);
+        }
+        else{
+            rb2.velocity= new Vector2(horizontal*speed , rb2.velocity.y);
+        }
     }
 
     private void Flip()

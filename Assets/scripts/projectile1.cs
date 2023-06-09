@@ -10,6 +10,8 @@ public class projectile1 : MonoBehaviour
     public float Radius = 2;
     public GameObject ExplosionPrefab;
     
+    
+
     void Awake()
     {
         rb =GetComponent<Rigidbody2D>();
@@ -19,23 +21,6 @@ public class projectile1 : MonoBehaviour
 
     }
     
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("tank1"))
-        {
-            // Handle collision with objects having "MyTag" tag
-        }
-
-        // Access the GameObject collided with
-        GameObject collidedObject = collision.gameObject;
-        // Access the Rigidbody of the collided object
-        Rigidbody collidedRigidbody = collidedObject.GetComponent<Rigidbody>();
-        // Access other components or properties of the collided object
-
-        // Perform actions based on the collision
-        // For example, destroy the collided object
-        Destroy(collidedObject);
-    }
     // Update is called once per frame
     void Update()
     {

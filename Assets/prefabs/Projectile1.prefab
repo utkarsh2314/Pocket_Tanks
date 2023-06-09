@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1637521660787291109}
   - component: {fileID: 1503486321806081240}
   - component: {fileID: 8255249807018622092}
-  - component: {fileID: -7633552020726949318}
+  - component: {fileID: -8153867966006493204}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: Projectile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &321853248591793906
 SpriteRenderer:
@@ -175,7 +175,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6, y: 3.6}
   m_EdgeRadius: 0
---- !u!114 &-7633552020726949318
+--- !u!114 &-8153867966006493204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,3 +187,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e611f2b9de91047b9ecc7d51df525e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  script: {fileID: 0}
