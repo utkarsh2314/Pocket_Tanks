@@ -11,5 +11,6 @@ public class shoot1 : MonoBehaviour
     {
         GameObject insProj = Instantiate(ProjectilePrefab, Muzzle.transform.position,Muzzle.transform.rotation);
         insProj.GetComponent<projectile1>().Initialize(power);
+       
     }
 }

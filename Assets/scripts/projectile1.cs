@@ -6,7 +6,7 @@ public class projectile1 : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    public float AliveTime =3;
+    public float AliveTime =4;
     public float Radius = 2;
     public GameObject ExplosionPrefab;
     
@@ -15,10 +15,27 @@ public class projectile1 : MonoBehaviour
         rb =GetComponent<Rigidbody2D>();
 
         Invoke("Explode",AliveTime);
-        Invoke("EnableCollider", .2f);
+        Invoke("EnableCollider",0f);
 
     }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("tank1"))
+        {
+            // Handle collision with objects having "MyTag" tag
+        }
 
+        // Access the GameObject collided with
+        GameObject collidedObject = collision.gameObject;
+        // Access the Rigidbody of the collided object
+        Rigidbody collidedRigidbody = collidedObject.GetComponent<Rigidbody>();
+        // Access other components or properties of the collided object
+
+        // Perform actions based on the collision
+        // For example, destroy the collided object
+        Destroy(collidedObject);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +44,7 @@ public class projectile1 : MonoBehaviour
 
     public void Initialize(int power)
     {
-        rb.AddForce(transform.right * (power/2), ForceMode2D.Impulse);
+        rb.AddForce(transform.right * (power/4), ForceMode2D.Impulse);
 
     }
 
@@ -38,11 +55,6 @@ public class projectile1 : MonoBehaviour
 
     void Explode()
     {
-        //SpawnExplosionFx();
         Destroy(gameObject);
-    }
-    void SpawnExplosionFx()
-    {
-        Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
     }
 }

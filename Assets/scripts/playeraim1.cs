@@ -53,12 +53,13 @@ public class playeraim1 : MonoBehaviour
     void UpdateAngle(int angle)
     {
         curAngle = angle;
-        AimSprite.transform.rotation = Quaternion.AngleAxis (curAngle,Vector3.forward);
-
         if(curAngle<0)
         {
             curAngle+=360;
         }
+        
+        AimSprite.transform.rotation = Quaternion.AngleAxis (curAngle,Vector3.forward);
+
         AngleLbl.text ="ANGLE: " + curAngle;
 
     }

@@ -471,8 +471,8 @@ GameObject:
   - component: {fileID: 2698102723726757339}
   - component: {fileID: 4777650846556889532}
   - component: {fileID: 478582430837510058}
-  - component: {fileID: 5095471073045451939}
-  - component: {fileID: 444906687606747927}
+  - component: {fileID: 1812966359406200252}
+  - component: {fileID: -6847384282563013933}
   m_Layer: 0
   m_Name: tank1
   m_TagString: Untagged
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2698102723726757339}
---- !u!114 &5095471073045451939
+--- !u!114 &1812966359406200252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,11 +649,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinPower: 0
   MaxPower: 100
-  AimSprite: {fileID: 7565706825015422416}
-  powerLbl: {fileID: 6576069665383948101}
-  AngleLbl: {fileID: 5515927707254815499}
-  shootscript: {fileID: 0}
---- !u!114 &444906687606747927
+  AimSprite: {fileID: 0}
+  powerLbl: {fileID: 0}
+  AngleLbl: {fileID: 0}
+  shootscript: {fileID: -6847384282563013933}
+--- !u!114 &-6847384282563013933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -665,8 +665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2283c65871d7729458efe35e1e251624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectilePrefab: {fileID: 7534140647862976486}
-  Muzzle: {fileID: 7233794202883390520}
+  ProjectilePrefab: {fileID: 0}
+  Muzzle: {fileID: 0}
 --- !u!1001 &7421533179735432505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,11 +728,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35c22377132f5814288a0f1694fb48a0, type: 3}
---- !u!1 &7534140647862976486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1040384407675069151, guid: 35c22377132f5814288a0f1694fb48a0, type: 3}
-  m_PrefabInstance: {fileID: 7421533179735432505}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8530390579359181412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1197003202448144221, guid: 35c22377132f5814288a0f1694fb48a0, type: 3}
