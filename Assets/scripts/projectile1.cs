@@ -15,9 +15,10 @@ public class projectile1 : MonoBehaviour
     void Awake()
     {
         rb =GetComponent<Rigidbody2D>();
-
+        
+        GetComponent<Collider2D>().enabled =false;
         Invoke("Explode",AliveTime);
-        Invoke("EnableCollider",0f);
+        Invoke("EnableCollider",0.2f);
 
     }
     
