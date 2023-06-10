@@ -179,14 +179,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 6777785520521583071, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 173589934}
     - target: {fileID: 7408263617236363986, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1219525117546287931, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 173589935}
   m_SourcePrefab: {fileID: 100100000, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
 --- !u!114 &32863477 stripped
 MonoBehaviour:
@@ -277,6 +284,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110152125}
   m_CullTransparentMesh: 1
+--- !u!1 &173589933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1219525117546287931, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
+  m_PrefabInstance: {fileID: 32863476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &173589934 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7393489253725409110, guid: 8f1218e30297ea74c87496a217a93f85, type: 3}
+  m_PrefabInstance: {fileID: 32863476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &173589935
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173589933}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

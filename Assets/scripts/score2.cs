@@ -10,7 +10,8 @@ public class score2 : MonoBehaviour
     public static int scoreof1 =0;
     public TMP_Text Score;
     public int collideon=0;
-    
+    public gamewin GameWin;
+
     void EnableCollider()
     {
         collideon=1;
@@ -25,6 +26,9 @@ public class score2 : MonoBehaviour
             scoreof1+=10;
             Score.text ="SCORE: " + scoreof1;
             Destroy(col.gameObject);
+            if(scoreof1>=100){
+                GameWin.Setup(1);
+            }
         }
     }
 }
